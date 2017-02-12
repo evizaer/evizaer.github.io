@@ -1,3 +1,6 @@
+---
+published: false
+---
 # The stuff of design
 
 "Stuff that is important to know about and you should be actively considering this stuff when you make any design decision" is maybe even better than guidelines, and I think you can do it well without making direct reference to existing games.
@@ -16,7 +19,7 @@ Strategy game design develops and balances three important aspects which are oft
 
 ## Agency
 
-Without the player's actions having some meaning, it's not worth playing the game.
+Without the player's actions having some meaning within the game, it's not worth playing the game.
 
 ## Analogy
 
@@ -25,3 +28,6 @@ Without the outside world to provide substantial meaning to the abstractions of 
 ## Variety
 
 Without enough to try and do within a game, we'll quickly grow bored and move on.
+
+# Hodological space
+hodological space n. In the topological psychology of the Polish/German-born US psychologist Kurt Lewin (1890–1947), a special form of topological geometry in which paths and vectors are defined psychologically, the distance between one hodological region and another being not the shortest path but the path of least effort given the attractive and repulsive valences of the regions making up the space. See also principle of least effort.
