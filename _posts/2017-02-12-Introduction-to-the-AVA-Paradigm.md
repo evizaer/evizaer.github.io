@@ -1,8 +1,6 @@
 ---
 published: true
 ---
-## Introduction to the AVA Paradigm
-
 My method of understanding and design strategy games starts off with a triad of critical concepts which I call the AVA paradigm--a somewhat memorable acronym combining the first letters of Agency, Variety, and Analogy. The interaction of these three concepts lies at the core of strategy game design. They each represent certain values which one must balance when designing any strategy game, and their substance is what attracts players and keeps them playing.
 
 I'll be posting more detailed discussions of each concept. Each one could have volumes written about it. But these brief discussions at least give us a place to start in our journey towards better strategy game design.
