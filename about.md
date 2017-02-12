@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm a professional software developer who works primarily in C#, but flirts with F# and Haskell. This blog is a place to show friends and interested parties my ideas on strategy game design and programming.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+If you've got questions or comments, [send me an email!](mailto:email@domain.com)
