@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 In my [article on analogy](analogy.html), I hinted that designers design abstract mechanics and then apply analogy to make the system most accessible to players. That is not a representation of how most people design video games today, it was merely a set-up for talking about analogy without diving too deeply into the properties of the abstract systems that underlie games. 
 
