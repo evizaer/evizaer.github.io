@@ -1,6 +1,17 @@
 ---
 published: false
 ---
+# leftover from analogy design methodology article
+
+This is quite a powerful method of brainstorming. The designer can chain practical mechanical decisions into analogical justification into its implications to suggest further mechanical additions and begin the loop anew. They can start this process from just about any bit of their game design and suggest wide-ranging changes that are only limited by the imagination and originality of the designer. This is a useful design technique, but it requires you start somewhere.
+
+Most designers start with a prototypical copying approach. Take structural properties of other games that you liked and copy them, filling in the various extension points they naturally offer with different details. By using an anological chaining technique as I demonstrated above, you can break free of the broad strokes your starting point gives you and move into uncharted ground.
+
+One entry point into uncharted ground is addressing mechanical weaknesses of existing games. I'll be working on many different  tools for understanding how to form mechanically solid game systems. Using these techniques in combination with analogical chaining will lead to some pretty strange and unique results that none-the-less have solid-feeling game worlds that are as unique and deeply interconnected as the systems that give them substance. I'm hoping to arrive at an approach to game design that offers a whole-game approach where analogy feeds on mechanical strength which feeds on analogy.
+
+## The Crucible
+
+The true crucible of game design is the player actually playing the game. We now lack the tools to do much else but heavily rely on this crucible. Designing a game without extensive playtesting seems absurd these days. It shouldn't be, and by advancing the art we can change this. The typical process of the game designer is to recognize in a playtest that a player is engaged in behavior the designer doesn't want to encourage--perhaps simply being bored, or perhaps becoming aggressively hostile to all other players in what should be a cooperative game--then to try to make changes to the game rules to encourage a desired kind of behavior, or to make the negative behavior impossible or too costly for a rational player to pursue. The designer doesn't know if she's found success until the next playtest shows some change in player reaction. But player reaction itself is inconstant and sensitive to many influences outside the game. You don't want to start redesigning half your game because Dave's cat died earlier today and some mild prodding from Anne during his turn caused him to break down in tears. A bored player could be simply distracted by some personal issue. A player who seems enthralled and is working very hard to win may just be trying to impress a love interest and actually they're just happy to be near to someone they have a bit of a crush on. With our current limited understanding of game design in the abstract, designers can easily get trapped into poor design decisions because of the inexactitude of their own understanding of what success looks like, and the vicissitudes of their player's lives during one of a limited number of playtests.
 # The stuff of design
 
 "Stuff that is important to know about and you should be actively considering this stuff when you make any design decision" is maybe even better than guidelines, and I think you can do it well without making direct reference to existing games.
