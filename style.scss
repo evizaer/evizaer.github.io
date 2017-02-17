@@ -120,6 +120,12 @@ img {
   color: $gray;
 }
 
+.discord-notice {
+  font-style: italic;
+  color: $gray;
+  padding: 1em;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
