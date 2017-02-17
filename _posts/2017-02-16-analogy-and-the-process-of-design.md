@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-In my [article on analogy](analogy.html), I hinted that designers design abstract mechanics and then apply analogy to make the system most accessible to players. That is not a representation of how most people design video games today, it was merely a set-up for talking about analogy without diving too deeply into the properties of the abstract systems that underlie games. 
+In my [article on analogy](evizaer.github.io/analogy), I hinted that designers design abstract mechanics and then apply analogy to make the system most accessible to players. That is not a representation of how most people design video games today, it was merely a set-up for talking about analogy without diving too deeply into the properties of the abstract systems that underlie games. 
 
 In reality, strategy game design often starts with analogy and relies on it as a way of making design decisons throughout the development process. Designers pick what kind of a game they want to make through reference to genre convention and personal experience with other games, history, and fantasy. Most design decisions are informed by analogy, not by a rigorous understanding of abstract systems of rules and the dynamics they create. Decisions are made based on what mirrors or captures a part of some interesting interaction in the real world that the designer wants to model and harness. Designers also take--often very direct--inspiration from interesting interactions in other games; existing, working systems provide a stable starting point that designer aims to elaborate or improve on. 
 
