@@ -35,6 +35,10 @@ Don't fall into the trap of trying to make something simpler by shuffling around
 
 This is one way in which Javascript fails. No default arguments and no variable-length argument lists in code. You can do these things by hotwiring the function abjects, though, in the function's code, which hides these facts from the caller who needs to know them and probably doesn't.
 
+# Subtyping and taxonomizing
+
+OO is very appealing because it allows nerds to taxonomize. Smart people love classifying and labelling things--it's actually what makes them smart. Being able to classify and label increasingly minute things makes you smarter than others. So OO fits smart people really well. THis is a kind of interdisciplinary smartness that doesn't require specific logical or mathematical skills. Functional languages tend to fit smart people who have a framework for understanding math; a much smaller set of people than smart people who may or may not care for math.
+
 Programming as State Transformation
 -----------------------------------
 
