@@ -1,13 +1,34 @@
+
 The lowest level element of programs is data. On the level humans deal with, the atomic unit is a function. Not a function as you think of them typically, though.
 
 `a = 1` is not an assignment statement. It is a function that only causes the side effect of making `a` substitutable for 1 in some scope.
 
-Writing a program is creating knowledge that you or someone else is going to have to learn and keep in mind. The objective is to create as little knowledge as possible while solving the problem at hand. This means leveraging consistent behavior, powerful metaphors, and domain-based analogies to their fullest extent so that what knowledge you already have (or can quickly attain) can be used repeatedly, instead of requiring separate bits of knowledge for the same effective solution. From this we get DRY, YAGNI, and KISS.
+# The knowledge perspective
+
+Writing a program is creating knowledge that you or someone else is going to have to learn and keep in mind. The objective is to create as little knowledge as possible while solving the problem at hand. This means leveraging consistent behavior, powerful metaphors, and domain-based analogies to their fullest extent so that what knowledge you already have (or can quickly attain) can be used repeatedly, instead of requiring separate bits of knowledge for the same effective solution. From this we get principles of good software engineering: 
+
+* Don't Repeat Yourself (DRY) - Reusing code means less specific knowledge is needed, since you only represent the knowledge of the reusable code's operation once.
+* You Ain't Gonna Need It (YAGNI) - Don't add additional features or capabilities to the system beyond what serves the requirements of the system direction. Don't create knowledge which isn't used.
+* Keep It Simple, Stupid (KISS) - More complex solutions inherently involve more knowledge to understand. It's built into the word "complex." This is actually a restatement of YAGNI, but in the positive instead of negative.
 
 On the small-scale of writing code, minimizing knowledge means keeping the scope of each bit of state as small as possible. 
 
 There is some wisdom in purist OO design that states that access to state of objects should be as minimal as possible. The programmer has to worry about keeping track of fewer things if he knows that only a few members can be called and set externally.
 
+IDEs help programmers leverage knowledge about the program, automatically derived from the program's code, to inform future code as it is written. Declaring what abstractions are is way more valuable than you at first might imagine. We trade flexibility for hard knowledge. We can't know what an object in javascript will look like unless we run the program. Programmers anywhere can mess with the contents of the any function, and change any data. In contrast, we can glean lots of relevant data from a C# class about what objects of that class will look like when we run the program.
+
+If you can make stuff up on the stop, structural knowledge is unnecessary and unwanted. If the language forces you to know and articulate the meaning of symbols before you use them concretely, you can't just make stuff up and change anything you want to suit your whims at a certain time. This means you have to think about the structure of your code up front--you have to think about particularly difficult questions of how to represent and manipulate information and processes from the real world. You have to do it up front and you have a very strict judge looking over your should during the process who is making sure you're being consistent.
+
+Different languages have different amounts of information you can encode in types so that the compiler can check your work automatically. Object Oriented languages tend to have pretty simple checking. We just want to amke sure you are passing a Thing or at least a kind of Thing to this function. @Insert haskell is next, then idris. And the actual content that makes them more powerful than one another. Blub paradox comes into play?
+
+This is why languages with more sophisticated type-checking tend to turn into proof assistants. Proofs and formal logic are how we state structural knowledge in unambiguous terms.
+
+through defining classes in an OO language or providing type annotations (and your own types) in a functional language
+
+Types are claims about compound data.
+Types are necessary, because you've got a bunch of bits that can be read off of disk, RAM, and processor registers, and those bits are only useful in that they represent *something*. Perhaps they represent some number or letter--that's up to programmer's conventions to decide, though. The physical data as it rests on your computer is agnostic. Code gives meaning to bits. Programming languages give you the tools to create that meaning in different ways. We take a cacaphony of bits and use programming languages to turn them into structures--combine these bits interpretted as a number and these other bits interpretted as a string and now you're representing a person's height and name in a something you call a "person" record or struct. A type is a type of data in this way: it's a schema for making sense of a mass of bits.
+
+# Goodhart's law and simplification
 Don't fall into the trap of trying to make something simpler by shuffling around details. Goodhart's law applies to simplification: any individual metric can be circumvented by increasing some other metric!
 
 `var f = function(a, b, c, d, e, f, g) { /* wow, some really complex code. */ }` is actually no worse than `var f = function(o) { a = o.a; b = o.b; c = o.c; /* etc, then the same code */ }` even though the function appears significantly simpler. Passing objects to functions in place of explicit arguments acts to obfuscate the use of the function to the caller/user. Think about the knowledge conveyed to the caller by the function signature: how are they going to find out what to set in `o` to get the desired behavior? 
