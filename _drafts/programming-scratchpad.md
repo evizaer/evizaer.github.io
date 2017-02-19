@@ -28,6 +28,10 @@ through defining classes in an OO language or providing type annotations (and yo
 Types are claims about compound data.
 Types are necessary, because you've got a bunch of bits that can be read off of disk, RAM, and processor registers, and those bits are only useful in that they represent *something*. Perhaps they represent some number or letter--that's up to programmer's conventions to decide, though. The physical data as it rests on your computer is agnostic. Code gives meaning to bits. Programming languages give you the tools to create that meaning in different ways. We take a cacaphony of bits and use programming languages to turn them into structures--combine these bits interpretted as a number and these other bits interpretted as a string and now you're representing a person's height and name in a something you call a "person" record or struct. A type is a type of data in this way: it's a schema for making sense of a mass of bits.
 
+in dynamic languages you often have to write the code that represents the same knowledge that's encoded in a compiler in a statically-typed language with an expressive type system. If you do not apply these constraints yourself, you are leaving yourself open to bugs. it would be absurd to check that every single value contained in a javascript object is actually what you think it should be everywhere it is used, though, so we skimp and pay the price later with runtime errors that are more usually more difficult to debug than a complie-time error.
+
+Types are a knowledge management tool--and a way of communicating to the compiler the knowledge you want to keep stable, then the compiler takes care of the busywork of maintaining that stability.
+
 # Goodhart's law and simplification
 Don't fall into the trap of trying to make something simpler by shuffling around details. Goodhart's law applies to simplification: any individual metric can be circumvented by increasing some other metric!
 
@@ -38,6 +42,10 @@ This is one way in which Javascript fails. No default arguments and no variable-
 # Subtyping and taxonomizing
 
 OO is very appealing because it allows nerds to taxonomize. Smart people love classifying and labelling things--it's actually what makes them smart. Being able to classify and label increasingly minute things makes you smarter than others. So OO fits smart people really well. THis is a kind of interdisciplinary smartness that doesn't require specific logical or mathematical skills. Functional languages tend to fit smart people who have a framework for understanding math; a much smaller set of people than smart people who may or may not care for math.
+
+# Subject-object distinction in OO
+
+x.Do(y). This is misleading because it looks like english and makes us want to use natural language metaphors and make all our code look like natural language. But natural language has no automatically-applied systematic knowledge restrictions like programming languages do. Your variables have to be in the right scope at the right time to be used by the methods that need them.
 
 Programming as State Transformation
 -----------------------------------
