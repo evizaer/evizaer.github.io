@@ -2,6 +2,16 @@
 published: false
 ---
 
+# Characteristics of randomness
+    Directness or closeness of effect: Direct effect or close effect randomness means it's very close to the player's action and happens in the determination of an action's effect--perhaps their action's results are directly decided by dice, like a damage roll or a to-hit roll. Less direct randomness is caused by the player's action, but as a secondary effect, for instance when you refill the common cards in Ascension. Direct randomness in Ascension would be a card that gives you 1d2 runes to spend. The most indirect-effect randomness possible is some set-up randomness that happens before players make any decisions, and that can't favor the first player to play. Perhaps this is the equivalent of the input/output idea?
+
+    Regularity of randomness is how reliable it is that randomness will be used to resolve something. If multiple mechanisms that the player uses to achieve the same goal exhibit different levels of randomness and perhaps some are deterministic, randomness is irregular. If the player can choose to do some things that are random or other things that are deterministic, randomness is irregular. If all randomness proceeds at predictable times that are a matter of regular procedure and are not the result of player actions, that random element is regular. Refilling the common card pool in Ascension is regular randomness, your choice of what to do with a character in XCOM on its turn is irregular randomness (movement is deterministic, some attacks are deterministic, some are random).
+
+    Gamut is simply how big the effect of randomness is. You can think of this in terms of how many important discontinuities randomness can cross. Being able to remove actors with randomness is a big discontinuity that randomness straddles in most games. If you're just randomizing which piece you get next in tetris, that's relatively narrow-gamut (perhaps this is debatable). Narrow-gamut randomness is not terribly common--I think we'd typically just compare two random elements and say which has a wider gamut.
+
+    Valuation-neutrality is how much random effects alter the value of a player's current position (in retrospect). More often I think the opposite is what we would discuss: just how Valuation-biasing randomness can be. I.e. does randomnses show a bias towards a certain strategy. So if in XCOM an alien shoots at you and randomly destroys your cover, that's very valuation-biasing. Even the map generation in Settlers of Catan is mildly valuation-biasing because it may screw players who go later. The only valuation-neutral randomness would happen before all player decisions are made, and the game would have to be simul-turns to prevent all first turn advantages derived from those random elements.
+     
+
 # Instead of arcs
 I don't think [arcs] describes how to make actions throughout the game matter.
 Here's how to make it happen: have the dynamics I listed above happen to the dimensions that players manipulate when they act. (feedback loops, resource exhaustion, compounding advantage, etc.)
