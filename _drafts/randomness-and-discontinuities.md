@@ -2,7 +2,14 @@
 published: false
 ---
 
+There is one key concept you need to master in order to gain a significantly better understanding of how to effectively use randomness to achieve variety in game design at minimal cost to agency. You need to analyze the effects of randomness through identifying discontinuous results.
+
 What is discontinuity?
+
+Consider hit points in a typical Dungeons and Dragons-like combat system: The specific number of HP a character has doesn't matter much to the game's rules (@Comment strategic evaluation of players?) unless it crosses a certain critical threshold: 0. At that point the rules intervene in a profound way by severely curtailing the player's choices with that character. Yes, this is a weird way of putting "the character dies", but I want you to be thinking about the peculiar way in games that a number, usuaally representing some resource, doesn't mean much until it crosses a threshold, then it means *everything*.
+
+I call this a discontinuity. It's a point at which a small, incremental change in the amount of a resource causes an outsized effect after otherwise not meaning much.
+
 
 # from a DFF post.
 
