@@ -1,7 +1,20 @@
+# Subject-object distinction
+https://github.com/dotnet/csharplang/issues/164
 
+From this proposal, it's clear that we want to be able to attach any method to any subject where it makes sense, independent of namespacing and object boundaries.
+
+C# allows extension methods, and there's a proposal to allow extension in basically all ways to any type. This points out that the subject-object distinction is not in fact valuable. You want to define operations on data, and if that operation comes after your data's dot or someone else's dot is irrelevant to the operation. 
+
+Functional programming languages tend to not believe in subject-object distinction at all, and their IDEs pay for it. Functions are module-qualified so we don't have too much namespace pollution, but if you want to see what you can do with a value of type String, it's tricky to do. You could search Hoogle, if you're using haskell, for functions of a type that has String on the left side of an arrow, but you'll get all kinds of stuff that won't make you happy.
+
+
+
+# Side-effects
 The lowest level element of programs is data. On the level humans deal with, the atomic unit is a function. Not a function as you think of them typically, though.
 
 `a = 1` is not an assignment statement. It is a function that only causes the side effect of making `a` substitutable for 1 in some scope.
+
+Rmemeber that every single piece of internal and public state of an object is implicitly passed to every instance method on that object when it's called.
 
 # The knowledge perspective
 
