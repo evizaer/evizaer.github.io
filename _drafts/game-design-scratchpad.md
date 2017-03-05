@@ -2,6 +2,87 @@
 published: false
 ---
 
+# Of state and actions
+To talk about the structure of games at the finest level, we need to talk about state and actions.
+
+## State
+Games consist of taxonomized objects that contain state. The game's state is all of the states of the objects in the game taken together. An object is one or more piece of state grouped together in a convenient way. You can think of state as describing what objects mean at a given time to the game.
+
+### Dimensions
+We can describe the state of a game object simply by listing its properties and their values.
+
+A piece in chess may have the following state: `{ type: bishop, x: 3, y: 1 }`. This expression completely defines what a specific piece means at a moment in a game of chess. 
+
+Contrast this with the state of a soldier in XCOM:
+```
+{
+    type: soldier,
+    class: heavy,
+    spec: gunner,
+    will: 90,
+    aim: 75,
+    name: Jeremy Johnson,
+    x: 10,
+    y: 15,
+    HP: 5,
+    skills: ...,
+    equipment: ...,
+    poisoned: 3
+}
+```
+
+That's pretty complicated, even considering I left out a big blob of state contained in the skills and equipment of the soldier.
+
+Notice that I show that the soldier is poisoned by just putting a number in its state. This is just the number of turns left on the poison effect, but that effect itself may have state, like the kinds of penalties it applies.
+
+Win and loss conditions are simply queries of the state of the game that can be successful (leading to a win or loss), or fail (meaning the game continues).
+
+
+# Far randomness? Not so fast!
+
+* Map generation in DCSS. Multiple stairways down is good because going down is near randomness (quick exposure to nearby enemies that could be very dangerous). Blind corners make map gen randomness more near than far. Discontinuities in information reveal.
+
+
+There is one key concept you need to master in order to gain a significantly better understanding of how to effectively use randomness to achieve variety in game design at minimal cost to agency. You need to analyze the effects of randomness through identifying discontinuous results.
+
+* (@ Maybe don't do this here) Nature. How big is the effect of randomness? Does randomness choose between values along one dimension, or does it have a composite effect? Does randomness choose what a player can do, or does the player choose how to employ randomness?
+
+
+# Calculation, Valuation, and Mental Models
+
+The player's job is to figure out what they can do and what it will mean in terms of achieving the game goal. This is done through mental simulation of playing the game, and valuing the results of some amount of simulated play in terms of the goal. After seeing this game or similar games played many times, players build up heuristics and general mental models that they can use to skip a lot of mental simulation and rapidly widdle down the list of possible moves they can make to a much smaller list of moves that they then simulate and assess directly. This mental simulation is typically called "calculation" or "reading." I will use the term calculation, because I'm used to using "reading" to mean assessing an opponent's mental state in games with double-blind decision-making. The proces through which the player assesses the relative value of calculation results is called "valuation". 
+
+It's useful to think of how the rules of a game will effect the player's mental model of how the game works. When a rule suggests the player will be getting closer to winning, the player will default to jumping on that as fast as possible. Rules that indirectly effect the goal or the means of reaching the goal are more difficult to grasp, generally, though after playing several games players will build general models of how to build up an "economy" so that they can become powerful just in time to win, and other higher-level strategic concepts useful to quickly comprehending indirection. Mark Rosewater's concept of [Lenticular Design](http://magic.wizards.com/en/articles/archive/making-magic/lenticular-design-2014-12-15) suggests that the best game elements have both a surface-level use that's obvious to beginners, but then a deeper, more powerful, and less direct use that reveals itself to more experienced players.
+
+The player's mental model contains both the apparatus of calculation and valuation. The player can only calculate effectively when his model of the rules is accurate enough to 
+
+
+# from a DFF post.
+
+
+But I think there's a further distinction to make here: quantitative results can have continuous or discontinuous effects. By this I mean the difference between killing something and just lowering its HP in a game where HP has no other effect. The valuation function for the outcomes of this randomness have an enormous discontinuity at the point which damage = remaining HP. This big, immediate jump in value seems far worse than a random damage result that changes the mean time till killing an enemy from 3 turns to 4. The distance between the randomness changing the game state and the discontinuous change in game state value is the crucial element. You want the randomness to feed into several turns of decision-making, in which its effects can be mitigated, instead of making the big jump in board value suddenly and wholly because of a randomly generated number. The big jump definitely requires a reaction from the player, but only after the fact since it's over so quickly (perhaps without any reaction possible before the big jump); the agency the player has in the result is way lower.
+
+### Taxonomy
+
+Above I merely gave each object a piece of state called "type" which told you what it was, but thoug rules refer to that type directly, they often laos apply to groups of objects in a hierarchical way. 
+
+In Chess, pieces cannot occupy the same tile. Pawns, Bishops, Knights, etc. are Pieces, so the rule applies to them all. Games thus have a kind of taxonomy of kinds of objects built into them. This is handy for expressing rules that apply to different game objects along various cross-sections.
+
+## actions
+
+The game also has rules which describe the changes the system goes through when prompted by the player. The player has a restricted set of actions she can use to transform game's state. 
+
+Actions are themselves restricted by state. You can't order a panicked soldier in XCOM to do anything. 
+
+
+
+# economy of mental energy
+Town mgmt games are a design trap because it takes a lot of difficult design to get them to function passably, and often players derive more enjoyment from when they malfunction (crazy character behavior) than when they succeed at presenting ubiquitous AI.
+
+It's important to think about your own mental capacity when designing games. What will be hard to understand and balance? How much complexity can you handle?
+
+Build a very tight game with small numbers means it'll be very difficult to tweak things without throwing the whole game further out of balance.
+
 # Characteristics of randomness
     Directness or closeness of effect: Direct effect or close effect randomness means it's very close to the player's action and happens in the determination of an action's effect--perhaps their action's results are directly decided by dice, like a damage roll or a to-hit roll. Less direct randomness is caused by the player's action, but as a secondary effect, for instance when you refill the common cards in Ascension. Direct randomness in Ascension would be a card that gives you 1d2 runes to spend. The most indirect-effect randomness possible is some set-up randomness that happens before players make any decisions, and that can't favor the first player to play. Perhaps this is the equivalent of the input/output idea?
 
