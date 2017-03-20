@@ -1,6 +1,41 @@
 ---
 published: false
 ---
+# Abstractness of rewards
+A good example of this is archetypal roguelikes and XP.
+Binary goal for a roguelike level: get to the stairs down and leave.
+But because XP is only awarded through fighting in almost all these games, and leveling up is necessary to stand up to tougher monsters, you pretty much are forced to fight monsters even if it's unnecessary for reaching the goal
+
+Roguelikes would see a lot of benefit from awarding a level when you hit the stairs down, or somehow  only having character advancement trigger on that goal completion. That way you can use whatever tactics you want to get there. The coarseness of the reward significantly increases count of viable strategies.
+
+Points are interesting, because they are extremely abstract.
+You can pile anything into points.
+Points can even have non-transitive interactions. Like RPS points, where at the end of the game if you have more R point than they have S points, you beat them, but if they have more S points than you have P points, they beat you
+You want points to be damn abstract, I think.
+That allows you to have different paths to getting them
+or it's a result of you having many paths
+a "concrete" points system is just doing one thing generates points. Like bumping foxies onto one tile in Auro
+an abstract point system rewards a pattern of play, or multiple patterns that do something similar.
+Like in Company of Heroes you gain VPs by holding two or three out of the  three victory locations
+that's an abstract way of rewarding players for holding territory, which itself is an abstraction over having units that can kill enemies in a specific area
+which is an abstraction over movement and production of units
+
+# Space
+All variables that are a part of game state can be conceptualized as space.
+
+Space is a predefined regular relationship between one or more variables. Strategy games typically make space discrete by making the smallest unit of traversablable space be scaled to the items in the world--say, a tile on the game's map is the size of one character or formation of soldiers (often, even larger than that).
+
+* Space is very cognitively efficient.
+* We can concoct spatial representations of more things than we currently do, like the mental state of a character. (Use RoTK10 debate system as an example.)
+* more complex adjacency relationships can be represented by space very readily. Typical adjacency relationships are one-dimensional and are better represented by numbers.
+
+# Concrete and Abstract Design
+The ability to effectively generalize is a sign of higher intelligence. It's always harder to create an abstraction that captures only good things than it is to create one, concrete, specific good thing.
+
+when the game is designed more concretely and the designer is good, the game is better at the cost of replayability
+Designing more abstractly is harder.
+So a good designer will usually do a worse job at it.
+So you'll have higher highs when you design concretely, but the duration of those highs will be shorter because it can't really have replayability and maintain the concreteness level that allows it to be so good in the first place
 
 # Of state and actions
 To talk about the structure of games at the finest level, we need to talk about state and actions.
