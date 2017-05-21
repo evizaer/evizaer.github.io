@@ -1,6 +1,310 @@
 ---
 published: false
 ---
+
+# Leftovers from tension article
+
+(@Work these next two concepts in somehow)
+With situationality, an action can be better or worse within a limited context, indirectly related to the game goal, based on conditions that may change. Localized value judgment + indirection is the key!
+
+Force allocation relies on repetition as a form of indirectness. If you're required to do something repeatedly in changing conditions, that means situationality can be interposed as a source of indirectness. Multiple different instances of a problem.
+
+(@Additional points here: Some games make available activities which have make all other activities better, like improved action economy. These at first seem like short v. long trade-offs, but realizing a tarde-off is contingent on being able to take advantage of your opponent's "weakness" caused by building up action economy instead of "defending themselves".)
+
+Not only are the units you can produce situational, but they can be used to better or worse effect in combat. This second layer of situationality arises from rules like cover, armor thickness variation on tanks' sides and rear, and machine gun teams' cones of fire. All off these modify payouts conditional on positioning relative to other units and/or map features.
+
+### Positioning and Space
+
+Space is the most powerful tool designers have to create interesting decisions.
+
+Space is exclusive: a unit can't be everywhere. Because it is in just one place, it enables situational play--staying out of its way! In a game like Company of Heroes, that has multiple victory locations and only requires a player to control a majority of them to win, one big powerful unit is not so threatening, because though it may steamroll your troops wherever it goes, it cannot be in two places at once. If you build a strategy around striking where it is not, you will win. Due to the exclusivity of resources, that big powerful unit represents a lot of the resources that the opponent had access to. If you deploy your troops against whatever else the opponent has, you should have local advantages.
+
+Local advantages are the stuff of good gameplay.
+
+### Exclusivity
+The player is forced to make decisions when she can't do two things at once. It could be because of any kind or combination of resource constraints: time, minerals in Star Craft, fuel in Company of Heroes, or even the player's attention. The option she chooses brings her closer to some sub-goals while making others harder to achieve. Regardless of which goal she's pursuing, a decision should shift her orientation and progress towards (and away from) many potential sub-goals at once. I will go into more detail on how this works shortly.
+
+Exclusivity is differentiation--exclusivity is at the heart of all trade-offs, and usually it'll be exclusivity along many dimensions. Not only can you only do one action on your turn, but the actions don't even effect the same areas of space and increase or decrease different resources in various ways.
+
+It's more than just having multiple actions of which you can only take one. The actions themselves should have exclusive effects and costs. Actions that can be directly compared based on their effects are of no use in creating tension. Two actions  that give different amounts of the same resource for the same cost are never worth having. If two actions end up being effectively the same cost for different magnitudes of result, it's well worth it to find out why and see if you can prevent that from happening. Don't waste the player's time.
+
+### Situationality
+
+The designer can introduce additional complexity into the player's decision-making process by introducing various conditions under which certain actions change their availability or costs and payoffs. I call this "situationality"--and the easiest way to think about situationality is to think "what could've been different in this situation to cause me to choose to do something other than what I chose?" Some examples:
+
+* 2D or 3D space is the most pervasive form of situationality to be found in games. Space provides uniform rules for having numerical relationships (like distance) between two game pieces, it allows easy-to-understand conditionals for rules, like if a unit is in range of another (for attacking), or if a unit is in range of a spot on the ground (for moving to it this turn).
+* In Star Craft, only medics can heal marines, and only a medic near a specific marine can heal that marine.
+* In Settlers of Catan, you can only build a settlement on a tile-intersection next to one of your roads if you have a brick, lumber, grain, and wool. You also aren't allowed to build settlements within two intersections of one another. You can only build a city if you have 2 grain and 3 ore and you already have a settlement on a certain intersection.
+
+### Indirectness
+Without some degree of indirectness, it's clear what to choose to do to win. When decisions lack indirectness, the player can easily make decisions because he can clearly see that one action gets him transparently closer to winning than the other.
+
+Removal or indirection. Playing at several remove from the goal. Requiring repetition can achieve this (health bars in fighting games, score goals) cheaply. 
+
+### All Three, Working Together
+Dimensions of exclusivity can stack to create real tension! Choosing whether to heal one unit for 2 HP or another unit for 3 HP has directly comparable cost and payout at the resource level, but they have exclusivity baked into their conditionalty--the unit to which each applies is exclusive. Games where effects are localized feature this kind of thoroughgoing situationality which lays the groundwork for lots of tension.
+
+Indirection is what makes unit production in RTSes interesting. It's hard to value a specific unit because its ability to do its job is highly conditional. Can you protect it long enough for it do damage? Can you get it to the right place to deal damage before counterplay is possible? 
+
+Exclusivity in time gets you nowhere alone, it is a structural support for trade-offs, though. Without it you cannot have trade-offs.
+
+
+## Simplest example?
+
+Linear race game vs. circular race game. In linear game, value to move to a space is clearly its distance to the goal. Players can't meaningfully interfere with one another, and there's no reason to use exclusivity in time or space because interference is a direct trade-off with achieving the goal sooner, and you can't sufficiently interfere with your opponent for the interference to be worth it--probably ever, even in 1-piece-a-side. 
+
+
+## The Constructive Approach
+
+The idea of tension is intended to be useful when you're designing a game. I intend it to be a pattern against which you mentally test rules as you think of adding them to your game.
+
+When designing, think of what the hodological space of your game looks like--that is, think about what a player will want to do based on the goals and tools you're providing them, and how they can use the game rules to reach those destinations. You can think of hodological space as a heat map overlaid on the game's rules which lights up in groups of rules that the player that the player is strongly incentivized to use, and is cooler in areas that get rare attention from the player. If players are using some of their actions way too much in proportion to others, or leave entire subsystems of the game unexplored, you need to adjust the rules to adjust the player's incentives and push them towards using a more appealing balance of the tools available.
+
+In order to adjust incentives intelligently, you need to have a mental model of what a player wants and doesn't want in your game. That the player wants or doesn't want to do something is the result of many complexly interactive factors which may themselves be complex. 
+
+The most obvious case--and that which generates all others--is that the player will win if he chooses a certain option. Such an option will be chosen immediately if recognized. If there are multiple options which will cause the player to win right now, it's irrelevant which the player chooses. (@Further explanation of why RPS isn't like this) These cases do not present the kinds of trade-offs which comprise interesting decisions, and situations which closely resemble this will also not register as interesting.
+
+
+## The player's perspective
+
+Strategizing consists of forward-simulation and valuation. You forward-simulate to explore potential futures and compare these possible futures using some process of valuation. Forward-simulation encompasses both the process of imagining concrete game states one move at a time, as well as more loosely estimating where the game might be after some number of turns assuming you pursue some course of action outlined by some principles.
+
+Valuation is a process through which we weigh the results of forward-simulation against one another. This weighing is done by assessing how close to various sub-goals we get by reaching the predicted future state. The sub-goals are themselves creations of the player based on salient conditions, which they think will bring them much closer to winning if they achieve. Sub-goals can be simple--taking a bishop in Chess--or complex and more nebulous--like achieving control of the center in Chess.
+
+But where do sub-goals come from? A part of learning a game is identifying important intermediate steps along the way to victory. You can come up with some such steps by reading the game's rules and noticing which actions put you close to winning. In Chess, you can quickly determine that to take the enemy's king you have to put him in check, and to do that you must move pieces so that they attack the king. So the obvious sub-goal is to attack the king. But there are other pieces in the way, so you have to invent further sub-goals to somehow get them out of the way, by either capturing or bypassing them. This process of sub-goal generation proceeds away from the end-goal and often can get all the way down to something you can achieve in a few moves--from a goal so far in the future that you couldn't hope for a forward-simulation to include it, to a sub-goal so near that you can work out its achievement in detail.
+
+Notice that in that Chess example the end-goal was specific, and as I worked backward in time the sub-goals became less specific: from capturing the king, to attacking the king, to perhaps bypassing or capturing other pieces. Choosing how to instantiate the more abstract sub-goals is the real quandary you face when playing a game. Will it benefit me more to try to punch through a pawn wall with a concerted attack immediately, or should I aim to draw his pieces away from the point of attack first through some diversionary threats? I can come up with all kinds of sub-goals which serve other sub-goals, and many of them lead to near-term moves that are radically different from one another. Here we see the substance of what makes a better player: both choosing the better sub-goals, and being able to achieve them more reliably through accurate forward-simulation.
+
+Players improve the evaluation of sub-goals through a process I call "reduction." Through reduction we take several outcomes with diverse effects and compare them based on one or more common measures--there are many ways in which to measure a game state, so reducing the set of measurements we consider is a required step in boiling down multiple appealing moves into the one we'll actually do. Reduction is necessary because you can't compare actions without reducing their effects to some comparable measure. Reduction is at the root of skilled strategizing because through reduction you approximate what will give you the best chance of winning. Reduction is often nebulous, but it can sometimes be a very sharp process, like in comparing various resource conversion techniques in the interest of reaching a certain resource amount as fast as possible. 
+
+(@Rewrite in light of above intro)
+Designing a good strategy game is thus constructing an environment where it is difficult to perform this process of reduction. Players will always want to reduce valuation to a single measure which can be reliably derived for all possible actions. This represents a "reduction" of many different dimensions of state and situationality into an unconditional absolute measure, and the death of interesting decisions. Game systems should be resistant to such reductions. Non-transitive mechanics are one way of permanent resistance. Randomness is actually not one.
+
+RPS resists reduction by axiomatically fixing payoffs along the only dimension of valuation.
+
+Short-run prediction vs. clarity of valuation: You can't calculate a game out to its end, so you find a way to value intermediate states. You can get better at this valuation separately from your ability to calculate and predict play in the short-run.
+
+Strategy is using limited resources to maximum efficiency during a limited period of time in achieving a goal. What's the general structure of the efficient use of resources in a period of time? 
+
+(@Probably a bad paragraph)
+The player's approach to forming a strategy has to do with addressing the influence of various conditions on his ability to win the game. When first acquainting himself with a new game system, the player is confronted by a jumble of conditions which change his ability to achieve his goals. The process of learning the game is untangling this jumble and slowly reducing the number of conditions the player needs to take into account in his evaluations. Better strategies in part consist of heuristics that reduce the cognitive load on the player by highlighting those conditions, out of an overwhelming manifold of conditions, that are worthy of close attention.
+
+It's this reduction process that allows a Chess player to decide to sacrifice a pawn in order to improve his center control. The concept of center control is itself a way of reducing the number of moves to forward-simulate through elevating the value of moves that exert control over the center. The idea of control is also a reduction mechanism at a much lower level, since it gives the player a tool to think in the abstract about possible future states of the game in terms of the movement patterns of pieces.
+
+## Short-term vs. Long-term
+
+One of the most pervasive tensions in strategy games is short-term vs. long-term. 
+
+
+
+
+
+
+
+## What are we abstracting over?
+Is anything used by players in the game to achieve the goal a resource?
+
+A resource - any game element with outward edges on the production network.
+
+@Revise: production network, not resource conversion network? Then I can define resource in that context. Production is just a direct result of rules in operation.
+
+The structure of strategy games: goal-directed resource conversion. Games have a multi-level structure of resources which at its root are simple, abstracted, resources that do not directly make progress towards the goal (minerals in SC). At the highest levels you have resources which directly accomplish the goal.
+
+Engine games typically use the same resource to either multiply itself or create VPs. You multiply resources as long as possible, then transition to VP production. This requires a positive feedback loop on the resource used to acquire VPs, and that there is a basic resource that is used at both the beginning and end of the conversion network.
+
+(@Todo: Make conversion network diagram for Dominion)
+
+SC conversion network is targeted at destroying your opponent's conversion network. "Annihilation" victory conditions in strategy games are about the total destruction of the opponent's resources. Total destruction overdetermines failure, or loss, by requiring way more to be done to defeat your opponent than is sensible for them to come back from.
+
+But what about space? Resources typically have some kind of accumulation into a one-dimensional space where more is "better" in that it lets you linearly convert into more of some other resource(s). Space is different. Space is all about differences between pairs or triples of numbers determining access to abilities and effects. Space is a resource, but only in how it relates to other items positioned in space. Players spend time and other resources to expand their influence over space on a game board.
+
+You typically don't "pay" for things in space, but you do pay to be within a range of space that enables new productions.
+
+Space is the most powerful tool for situationality.
+
+## Conversion networks
+Sequencing to maximize effect.  Player actions put resources into conversion networks which mature at different points in the game. 
+
+Maturity means yielding a "pointy end" with which to pierce the win condition. Usually this means there are preparation phases and exploitation phases. You build an army, then you use it to damage your opponent's capacity to damage your capacity to damage them. (What about Company of Heroes and point capture?)
+
+Strategy games are about giving players interesting choices.
+
+Each interesting choice exists because the game presents exclusive actions that may work towards objectives that are both valuable but either exclusive or compete for the same resources.
+
+Opportunity costs. Especially when those costs persist. If you have access to the same choice multiple times then the opportunity cost doesn't matter much, since you can just take it next turn.
+
+To understand how to generate interesting choices, you need to understand how to construct a system with its pieces in tension. You want to maximize this tension and make it as complex and multi-layered as possible--such games maintain their interest for longer.
+
+Complex tension means variations in contextual elements change what you have to do, sometimes significantly. You don't always want to do Action A, you have to do action A when X and Y are true, and action B when Z is true and C just happened, etc. The more twists and turns this stack of conditionals is the more tension and interest.
+
+
+## Situationality
+
+The player asks "What could I have done differently?" when he loses, the designer asks "What could have made the player do something differently?" and "What could make the player use X instead of Y?"
+
+What's interesting about a situation is how it's different from all others--that's why you'd want to look into what happened in the first place! There has to be similarity between situations, which allows orientation, and then there have to powerfully-contrasting unique bits.
+
+## From nothing to something: Interesting decisions from scratch
+
+The simplest (and utterly degenerate) game is a single-player game where the player can either directly choose to win or lose. This game only provides one possible measure of utility of a move: if it wins or loses. We can evolve this base case in one of two directions to try to generate some interesting decisions for the player: we can introduce randomness to obscure the outcome, or we can add some parallel systemic continuum separate from win-loss that the player has to make decisions about which indirectly leads to the determination of if they win or lose.
+
+The randomness approach suggests the simple elaboration of asking the player to guess the outcome of a coin toss. This game gains uncertainty in the result but sacrifices the player's ability to exercise skill. There is nothing relevant to the result to discriminate. Sure, you can make a choice between heads and tails, but it only has an incidental (@what does this mean?) impact on whether you win or lose.
+
+The determinist approach doesn't directly suggest anything obvious to me--you could go in several directions. One direction is a packing problem, where the player is given a list of numerical values and has to find the combination which sum to a target number.
+
+Obvious determinist approach is just to add more branches. Choose 1 or 2, then 1.1 or 1.2, etc. Then these map to winning or losing directly. This adds one layer of indirection which is trivially surmounted by thinking ahead by one action. The win or loss determination propagates up the decision tree, from the end of the game to the beginning, directly and clearly.
+
+(@More: This is introducing a layer of situationality into the decision tree, but we actually want to introduce it into the valuation algorithm! Multiplying states doesn't necessarily have an impact on valuation. situationality with stark results is important)
+
+Now introduce a resource: Z. You can choose whether to have one more or one less Z each turn. You win when you reach a target amount of Z. Still not interesting, though, because you have no feedback. If you know the rules of the game, the path to winning is obvious, if you don't know the rules of the game, the path to winning is totally obscured--just don't retrace your steps by adding when you once subtracted Z, or vice versa. Contrast this to a game where you MUST arrive at a target amount of Z using so many additions without a subtractions.
+
+## Misc notes
+
+Indirection is implied by clashing incentives. Games have one incentive: to win. To have clashing incentives, there need to be many contributing effects to if you win or not. Chess accomplishes this by checkmating requiring the interactions of more than two pieces--thus you need to balance the incentive to put multiple pieces into necessary checkmating positions--you want to put a bishop here and the queen there, but you can only do one at once, and your opponent will have time to react and potentially make it impossible for you to do the other move you need to do!
+
+### Layers of Indirection: Company of Heroes Example
+To produce multiple conflicting incentives, the designer can simply add more conditions to winning. Scoring along more than one dimension introduces a trade-off between advancing along the dimensions so long as the dimensions are built out of different stuff.
+
+Games with higher sophistication add layers of indirection between the stuff of the victory condition and the stuff the player can manipulate. In Company of Heroes, you have to accumulate a 500 victory points to win, which is done by holding more victory locations than your opponent over time, which is done by moving infantry within the capture radius of one of three points, which can be done once you build troops, which can be done once you build certain buildings, which can be done using your starting engineer units and starting resources. So many layers of indirection!
+
+There are four main layers here: 
+(1) the layer of victory points. Introducing an element of time during which control of territory is contested. 
+(2) the layer of territory control. Introducing methods of removing an opponent's units from areas of interest.
+(3) the layer of unit manipulation. Introducing the ability to put units in places on the map which are better than others towards achieving victory. 
+(4) the layer of unit production. Introducing buildings and units, which are ways to spend the resources of manpower, fuel, and munitions towards winning.
+
+### Relative utility of resources, regulated by feedback loops
+Linear growth is the enemy of good game design. The enemies of linear growth are positive and negative feedback loops. Negative feedback loops force the player to trade something for linear growth. Positive feedback loops provide relative spikes in utility that cannot be sustained without every-increasing resource consumption.
+
+Games must be linear in resource gain to avoid exponential utility growth via positive feedback loops.
+
+XCOM: in-mission resources are primarily lost. Resource gain is only relative. Looking for gains in EV of ability use compared to enemies. Gun ammo is cyclical, and not lost. From a given position you can calculate EV of each ability's use on each available target. EV components are ammo left (minor), enemy HP left (major, especially if it kills an enemy). Reward for killing an enemy is lower expected damage received, which lowers rate of player losing units. Having more EV than an opponent thus leads to a positive feedback loops of eliminating opponents which lowers overall enemy EV while reducing expected loss. Lower expected loss means more risk can be tolerated and thus more damage can be done faster. (ex. when you know you have enough actions to kill all remaining aliens with 100% certainty, you can run guys into cover--it collapses negative consequences by removing threats.)
+
+### Misc.
+The ways you elaborate a game are to add additional conditions to requirements and add additional conditions to payouts (benefits AND costs!) for meeting the requirements. That's basically all.
+
+Want to introduce situationality without overdetermining player action through copious restrictions on what can be done, or what can be done with obvious benefit. Proofreading can result from excessive sharp situationality.
+
+Always-good options have no tension.
+
+Tension is a dynamic property of a system which generates interesting choices for the player.
+
+Tension is a way of articulating when a design is sufficient to support non-trivial strategy.
+
+Short-term vs. long-term relies on the same as risk v. reward, except long-term is obscured by all of the unknown decisions between now and then, whereas risk v. reward can be compressed into one dice roll.
+
+Where uncertainty and ambiguity match up and diverge. It is not ambiguous whether you should choose a move that gives a 75% chance of winning or a move that gives 70% chance of winning. But it is uncertain whether you will win.
+
+Two most basic tensions:
+Opportunity costs
+Short vs. Long term
+
+SwiftSpear suggested Mass vs. Rush vs. Econ in SC.
+Probably is potential vs. reality, or flexibility vs. manifest power. 
+
+non-transitive interactions heighten the tension caused by opportunity cost.
+
+Understanding the properties of rulesets, then designing to achieve certain properties while avoiding others.
+
+# The role of fixed points and discreteness
+
+The units in a game like Star Craft or Company of Heroes represent discrete points on various stat-per-resource graphs, like attack-per-mineral or AP-power-per-fuel. We often talk about these power curves as a tool for addressing game balance concerns, but it's worth examining why we make these fixed points instead of providing a power curve and letting players pick a point on that curve for the units they want to build.
+
+UI is difficult, perhaps impossibly-so.
+
+Discrete points ensure there's imperfection in mappings--the player always overshoots or undershoots. (Maybe not actually valuable?)
+
+Less cognitive load to manage the combination of some pre-set resources. Perhaps too much indirection?
+
+This is a general case against unit customization. It could be read as support for sufficiently discrete customization, though.
+
+# Comparative analysis of XCOM vs. Battle Brothers combat
+
+Reference videos from Marbozir and XWynns or Joinrbs
+
+XCOM abilities have tons of contrast.
+BB abilities seem to move stats around.
+Cover and flanking provides large positional contrasts with sharp boundaries. BB terrain just gives a bunch of penalties or bonuses that are non-situational.
+
+BB doesn't seem to have any concept of shock, so attacking is just a disadvantage since it weakens your formation and opens chars up to ranged attacks.
+
+A further contrast with FFT 1.3 combat might be awesome.
+
+XCOM missions involve engaging multiple pods. With a timer, finishing off enemies efficiently is at issue--without a timer it doesn't matter since time is unlimited. (You can delay and use renewable resources--bullets--to do the work.) BB is single-pod, so battles peak in interestingness pretty early and whimper to a conclusion as one side gets whittled down.
+
+# Civ 6 and AI in the face of exponential advantage from non-trivial system optimization
+
+Civ 6 city layout is now very important, and can have huge benefits for well thought-out city, district, and improvement placement. AI is hard to write for this, so the player can easily gain a huge advantage as the game progresses. Even on Deity, as Quill18's latest LP shows, the AI gets a huge head start but superior layout ensures the player can catch up by halfway through the game. Snowballing mechanics are worsened by an AI that can't go from linear growth to exponential and thus goes from being overwhelmingly powerful for a third of the game to being a walkover for the latter half.
+
+# CoH vs. SC
+
+CoH's VP system allows it to disengage the positive feedback loop of the zero sum nature of annihilation. This allows both players to remain capable and capable of recovering from blows throughout the game. CoH has further made base rushes much less profitable by providing free base defenses that are potent against early-game units. The retreat system also leads to plenty of units being at your base if you're in a position where a base rush is available to your opponent, so the many weakened units can usually take out the threatening unit.
+
+# Complexity and slack
+
+High complexity requires more slack. The game won't permit learning if there isn't enough slack so that the player can explore the complexity without being pummelled. This is a good reason to have multiple scenarios, or to keep complexity from getting too high.
+
+# XCom research, time tensions
+
+Should it be hard to equip all soldiers with latest equipment?
+Moving swiftly through research means you can't pin down strategies for the tactical layer. A cheap way to avoid the player running out of tactical depth--just give them different combinations of techs to work with against evolving enemy types.
+
+# XCom strategic layer hidden information
+Tons of hidden info early on. You can only see in such a limited range that the alien activity doesn't have much meaning and it's hard to make good decisions. This is also when you are worst-equipped.
+
+Later in game you have good radar coverage and can make smarter decisions about when to engage, but you also have more capable and customized soldiers. 
+
+This is another bad feedback loop in the game.
+
+It's also a "newb trap", because the newb's ability to comprehend alien behavior is worse the newer he is because you start off with the least amount of information and then have more as you get through a campaign. Many players can never interact with the real strategic layer depth because of this lack of informtion. Since other positive feedback loops can cause you to start steamrolling aliens before you can even piece together alien behavior, the strategic layer's intricate logic of alien behavior is largely unnecessary to explore, and thus should be removed or tweaked.
+
+# XCom 2 design work
+More conditions and ways of manipulating the timer.
+Timer needs to have conditional bad meanings for when it expires.
+XCOM's goal is to fight as few aliens as possible--this is a guerilla war after all.
+XCOM's tools should make engagements conditionally go by faster, if time is the key here.
+
+You NEED interleaved turns, or else opponents just do not get a chance to act, so interaction with them is much more flat--you can only modify conditions for killing them, you can't also have them effect how the mission plays out further (??). It just increases resource costs (these resource amounts don't matter until they're 0, and most have more than 1 use) to not pay a time cost.
+
+Bullets are free. Abilities are not. This is important to the cost structure--bullets have to take more time than abilities, but also bullets are more likely to miss. ABilities just give you certainty, and certainty is really powerful because you can KNOW how much time it will take you to move past a pod instead of merely having some probabalistic estiamte.
+
+Slowness of XCOM1 would go away if enemies converged on your position by default, so if you don't move enough you will get slammed by pods. This may overreward defensible starting locations. Perhaps pods patrol "aimlessly" until the first engagement, then they go on a yellow alert. Long War 2 has this yellow alert and it seems to work well, though free actions for enemies don't feel good, since enemies usually just pop out of fog of war and start shooting you--bad near randomness.
+
+Why not let the player see all terrain and also give them motion tracker at all times?
+
+Watching Long War 1: number of times player relies on AI being bad is crazy.
+
+# Force allocation in TSes and RTSes
+From DO discord convo with JP:
+RTSes and Team shooters (TSes?) both present similar problems of force allocation to players, but TSes require collective dynamic solution usually without communication whereas the player tends to do all the allocating in RTSes on their own. In RTS team games you get closer to the collective action of TSes, but not very
+Since it's easier to project force throughout an area of a map in an RTS, you can more easily split the responsibility for map control along the midline of the map between you and your teammate.
+In a TS you can only project force in a small area.
+and it all emanates from one point. RTSes allow you to project force from many points which are disconnected and potentially spread out over a broad area
+So there's both a multiplication of player count, as well as a diminution of projection of force. That combines to make TSes with multi-point game modes extremely engaging and replayable.
+Note that those two factors also force teamplay in TSes by preventing the clean separation of responsibilities team play in RTSes allow
+
+# Games for testing models
+
+Incetives align nicely for designer and modeller. Simpler model means easier-to-implement game.
+
+# CK2's Problem
+
+Level of representation doesn't match with level of abstraction. You "play" as a noble, but you are actually at a level of abstraction above the individual. You make decisions as if you were one noble, but your incentives are at the lineage level. This is a fundamental design failure that leads to CK2 being too easy or only hard because of punishing randomness.
+
+
+
+# Turn systems
+Alternating vs. interleaved
+
+Complexity level: number of units to move.
+Incremental feedback
+Reorderability of moves, undoing stuff.
+
+Skill and being able to react: much better in interleaved turns.
+Tighter interaction is more interesting?
+
+Reaction fire in XCOM/semi-interleaved turns. Reactions in general: a bad idea? Too complex? What's their value?
+
 # Abstractness of rewards
 A good example of this is archetypal roguelikes and XP.
 Binary goal for a roguelike level: get to the stairs down and leave.
