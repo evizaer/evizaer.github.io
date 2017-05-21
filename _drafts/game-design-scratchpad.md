@@ -9,7 +9,7 @@ With situationality, an action can be better or worse within a limited context, 
 
 Force allocation relies on repetition as a form of indirectness. If you're required to do something repeatedly in changing conditions, that means situationality can be interposed as a source of indirectness. Multiple different instances of a problem.
 
-(@Additional points here: Some games make available activities which have make all other activities better, like improved action economy. These at first seem like short v. long trade-offs, but realizing a tarde-off is contingent on being able to take advantage of your opponent's "weakness" caused by building up action economy instead of "defending themselves".)
+(@Additional points here: Some games make available activities which have make all other activities better, like improved action economy. These at first seem like short v. long trade-offs, but realizing a trade-off is contingent on being able to take advantage of your opponent's "weakness" caused by building up action economy instead of "defending themselves".)
 
 Not only are the units you can produce situational, but they can be used to better or worse effect in combat. This second layer of situationality arises from rules like cover, armor thickness variation on tanks' sides and rear, and machine gun teams' cones of fire. All off these modify payouts conditional on positioning relative to other units and/or map features.
 
