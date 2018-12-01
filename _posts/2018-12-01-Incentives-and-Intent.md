@@ -22,7 +22,7 @@ In this article, I will analyze the incentive structure of tactical missions in 
 
 ## The Rules
 
-In XCOM, the player and enemies alternate turns in which all of their characters can act. the player can issue orders to her characters in any order, but each command is permanent. The player’s turn ends when all her characters have taken actions.
+In XCOM, the player and enemies alternate turns in which all of their characters can act. the player can issue orders to her characters in any order, but each command is permanent. The player’s turn ends when all her characters have taken actions or double-moved. Each character can move and act, or double-move. Actions include firing at enemies, reloading a weapon, using special abilities, and going on overwatch.  
 
 ![Screenshot of XCOM2012](/images/xcom2012-1.PNG)
 (Image taken from [Beaglerush's fantastic let's play](https://www.youtube.com/watch?v=T-cBJc38O_k&list=PLXctaw5JGF4LcidFVdkQMV1tc2DfC8x3D).)
@@ -34,9 +34,13 @@ If the player doesn’t encounter enemies for a few turns the game gives the pla
 The challenge in any mission comes from defeating the enemies on the map. At any given time enemies are either in an active state, where they’re fighting the player’s squad, or in an unactivated state, where they “wander” the parts of the map that the player cannot see. 
 A player activates an entire pod when any member of that pod gains LoS on any member of the player’s squad. Since the player cannot activate less than one pod at a time, the pod represents a basic unit of danger in the mission.
 
-The objective of a mission usually involves killing all enemies or reaching some location. EIther way, the player must move across the map into unknown territory to fulfill the objective. Each tile the player reveals may contain an enemy and thus activate a pod, even when the player is currently engaged with another pod.
+When pods activate, the members of the pod get one free move each, which they typically use to get into cover. If the pod activated on the player's turn, the player's turn continues as normal after the enemies "scamper." If aliens walk into the player's LoS during the aliens' turn, the aliens scamper and the aliens' turn ends.
+
+The objective of a mission usually involves killing all enemies or reaching some location. Either way, the player must move across the map into unknown territory to fulfill the objective. Each tile the player reveals may contain an enemy and thus activate a pod, even when the player is currently engaged with another pod.
 
 Soldier and alien LoS is reciprocal. Once the player sees enemies, those enemies will activate. A notable exception is the “battle scanner” item, which a soldier can throw into the distance and gain temporary vision of enemies such that they won’t activate. Most of the time the player will activate enemies by moving one of her characters such that it gains vision of an enemy.
+
+Characters can be put on overwatch instead of shooting. On overwatch, a character will fire at the first enemy that moves within their LoS. When a character is on overwatch and a pod activates, that character will get their overwatch shot on any enemy that scampers through their LoS. In the next turn--which comes before any aliens can shoot--that character can take another shot. Overwatch effectively grants a soldier an extra shot on aliens that just activated.
 
 Dealing with one pod is manageable but can be tricky, dealing with two can be lethal, dealing with three is likely to cost the player multiple characters or wipe out her squad entirely. 
 
