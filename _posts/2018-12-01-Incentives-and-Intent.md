@@ -1,6 +1,6 @@
 ---
 published: true
-title: Incentives and Intent: XCOM’s Creeping Forward Problem
+title: "Incentives and Intent: XCOM’s Creeping Forward Problem"
 ---
 
 You can better design games when you can keep two clear and separate pictures in your head at once: what your game incentivizes the player to do, and what you want the player to do. Often designers only have a grasp on what they want the player to do so their playtesting consists of doing those things and making sure they work. Regardless of the clarity of the designer’s vision, the player does not have access to it and will follow the game’s incentive structure. Even relatively small misalignments between intent and design can cause the end result to look markedly different if not broken. For instance, an RTS with a slight imbalances in unit design will see players neglect most of the unit types available to them in favor of building the one imbalanced unit or its counter. 
